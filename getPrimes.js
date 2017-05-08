@@ -1,4 +1,5 @@
-function getPrimes(number) {
+var file = {}
+file.getPrimes =  function(number) {
     var arr = []; 
     if (typeof(number)!== "number"){
         return "invalid input"
@@ -22,3 +23,4 @@ function getPrimes(number) {
         }
         return arr;
       }
+module.exports = file;
